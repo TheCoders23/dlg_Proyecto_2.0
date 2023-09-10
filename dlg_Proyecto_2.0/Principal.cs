@@ -42,12 +42,12 @@ namespace dlg_Proyecto_2._0
         public String sLastError = string.Empty;
         private void treeView1_AfterSelect_1(object sender, TreeViewEventArgs e)
         {
-            
-            String connectionString = $"Server={sServer};Integrated Security=True;";
+
+            String connectionString = SQL_SERVER.sCadenaConexion;
 
             TreeView treeView = new TreeView();
 
-            using (SqlConnection connection = new SqlConnection(SQL_SERVER.sCadenaConexion))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
