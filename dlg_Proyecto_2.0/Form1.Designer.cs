@@ -43,6 +43,7 @@
             this.tbservidor.Name = "tbservidor";
             this.tbservidor.Size = new System.Drawing.Size(142, 20);
             this.tbservidor.TabIndex = 14;
+            this.tbservidor.TextChanged += new System.EventHandler(this.tbservidor_TextChanged);
             // 
             // button1
             // 
@@ -52,6 +53,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Conectar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tbcontrasena
             // 
@@ -59,6 +61,7 @@
             this.tbcontrasena.Name = "tbcontrasena";
             this.tbcontrasena.Size = new System.Drawing.Size(142, 20);
             this.tbcontrasena.TabIndex = 12;
+            this.tbcontrasena.TextChanged += new System.EventHandler(this.tbcontrasena_TextChanged);
             // 
             // tbusuario
             // 
@@ -66,6 +69,7 @@
             this.tbusuario.Name = "tbusuario";
             this.tbusuario.Size = new System.Drawing.Size(142, 20);
             this.tbusuario.TabIndex = 11;
+            this.tbusuario.TextChanged += new System.EventHandler(this.tbusuario_TextChanged);
             // 
             // label3
             // 
