@@ -14,8 +14,9 @@ namespace Reglas_Negocio_2._0
     {
         public String sLastError = string.Empty;
         public string sCadenaConexion = string.Empty;
+        
 
-        public Boolean SiHayconexion(string sServer, string sUsuario, string sContrasena)
+        public Boolean SiHayconexion( String sServer, string sUsuario, string sContrasena)
         {
             Boolean bAllOK = false;
 

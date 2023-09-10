@@ -16,7 +16,18 @@ namespace dlg_Proyecto_2._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 Login = new Form1();
+            Login.ShowDialog();
+
+            Principal principal = new Principal();
+            if (Login.blogcorrecto)
+            {
+                principal.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("No Tiene Acceso a la DB");
+            }
         }
     }
 }
