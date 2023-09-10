@@ -13,8 +13,15 @@ namespace Reglas_Negocio_2._0
     public class SQL_SERVER
     {
         public String sLastError = string.Empty;
-        public string sCadenaConexion = string.Empty;
-        
+        //public string sCadenaConexion = string.Empty;
+       
+            
+            public String sCadenaConexion { get; set; } // Propiedad pública
+            public void SetMiVariable(string servidor)
+            {
+               sCadenaConexion = servidor;
+            }
+       
 
         public Boolean SiHayconexion( String sServer, string sUsuario, string sContrasena)
         {
